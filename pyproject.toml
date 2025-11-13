@@ -1,0 +1,10 @@
+[project]
+name = "pydantic-ai-outlines-demo"
+version = "0.1.0"
+description = "Example repository demonstrating the use of Outlines in Pydantic AI"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "pydantic-ai-slim[outlines-transformers]>=0.0.14",
+    "torchvision",
+]
