@@ -5,6 +5,6 @@ description = "Example repository demonstrating the use of Outlines in Pydantic 
 readme = "README.md"
 requires-python = ">=3.10,<3.13"
 dependencies = [
-    "pydantic-ai-slim[outlines-transformers]>=0.0.14",
+    "pydantic-ai-slim[outlines-transformers]",
     "torchvision",
 ]

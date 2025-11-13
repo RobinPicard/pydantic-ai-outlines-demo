@@ -1,29 +1,28 @@
 # Pydantic AI Outlines Demo
 
-This repository demonstrates how to use Outlines from Dottxt in Pydantic AI `pydantic-ai` with a multimodal model (Qwen2-VL) through Transformers to extract structured data from receipt images.
+This repository demonstrates how to use [Outlines](https://github.com/dottxt-ai/outlines) from [Dottxt](https://dottxt.ai/) in [Pydantic AI](https://ai.pydantic.dev/) with a multimodal model (Qwen2-VL) through Transformers to extract structured data from receipt images.
 
 ## Prerequisites
 
 - Python 3.10 – 3.12
 - A GPU with sufficient memory for `Qwen/Qwen2-VL-7B-Instruct`
+- `uv` installed
 
 ## Installation
 
-To run the example, create a virtual environment and install the dependencies.
+To run the example, start by setting up the environment with `uv`
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -e .
+uv venv
+uv sync
 ```
 
-The editable install pulls the required packages listed in `pyproject.toml`, including `pydantic-ai-slim[outlines-transformers]` and `torchvision`.
+These commands pull the required packages listed in `pyproject.toml` and defined in `uv.lock`, including `pydantic-ai-slim[outlines-transformers]` and `torchvision`.
 
 ## Running the Demo
 
 ```bash
-python main.py
+uv run main.py
 ```
 
 The script will:
